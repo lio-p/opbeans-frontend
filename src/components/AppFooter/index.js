@@ -27,7 +27,7 @@ class AppFooter extends Component {
                       </div>
                       <div className="seven wide column">
                           <p>
-                              2017 © Opbeans Coffee Management System<br/>
+                              2020 © Hipster SIMS Management System<br/>
                               <span>This is a demo application made by <a href="https://opbeat.com">Opbeat</a></span>
                           </p>
                       </div>

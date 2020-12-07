@@ -32,9 +32,9 @@ class Dashboard extends Component {
               <div className="ui middle aligned stackable grid container">
                   <div className="row">
                       <div className="sixteen wide column">
-                          <h1 className="ui header">OpBeans Dashboard</h1>
+                          <h1 className="ui header">Hipster SIMS Dashboard</h1>
                           <p>
-                            The Sales & Inventory Management System for <a href="/">OpBeans Coffee Distribution Inc.</a><br/>
+                            The Sales & Inventory Management System for <a href="/">Hipster SIMS Distribution Inc.</a><br/>
                             Manage products, orders and customers and keep an eye on sales and stock levels.
                           </p>
                       </div>
