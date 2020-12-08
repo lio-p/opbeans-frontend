@@ -42,6 +42,12 @@
     background: rgba(34,36,38,.1);
 }
 
+.AppHeader .menu.login {
+    position: relative;
+    right: -20px;
+    float: right;
+}
+
 .App > .AppFooter {
   flex: 1;
 }

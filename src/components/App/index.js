@@ -18,13 +18,24 @@ import Customer from '../Customer';
 import NotFound from '../NotFound';
 
 class App extends Component {
+  constructor() {
+      super()
+      this.state = {
+        username: window.user,
+        first_name: '',
+        last_name: '',
+        email: '',
+        errors: {}
+      }
+  }
 
   render() {
     const { className } = this.props;
+    //console.log(window.user)
     return (
       <div className={classnames('App', className)}>
-        <AppHeader />
-
+        <AppHeader username = {this.state.username}/>
+        
         <div className="AppMain">
           <Switch>
             <ApmRoute

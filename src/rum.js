@@ -40,6 +40,7 @@ window.deactivateLoadGeneration = function () {
 let serviceName = window.elasticApmJsBaseServiceName || process.env.ELASTIC_APM_JS_BASE_SERVICE_NAME
 let serviceVersion = window.elasticApmJsBaseServiceVersion || process.env.ELASTIC_APM_JS_BASE_SERVICE_VERSION
 let serverUrl = window.elasticApmJsBaseServerUrl || process.env.ELASTIC_APM_JS_BASE_SERVER_URL
+let user = window.user
 
 let rumConfig = window.rumConfig || {}
 
@@ -63,9 +64,11 @@ const users = [
     { id: 4, username: 'zaphod', email: 'z@example.com' }
 ]
 
-apm.setUserContext(
-    users[Math.floor(Math.random() * users.length)]
-)
+// apm.setUserContext(
+//     users[Math.floor(Math.random() * users.length)]
+// )
+
+apm.setUserContext({username: user})
 
 apm.setCustomContext({
     userConfig: {

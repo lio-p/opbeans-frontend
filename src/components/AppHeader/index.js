@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink as Link } from 'react-router-dom';
 import classnames from 'classnames';
+import Avatar from 'react-avatar';
+
 
 class AppHeader extends Component {
 
@@ -28,8 +30,11 @@ class AppHeader extends Component {
                             <i className="users icon"></i>
                             Customers
                         </Link>
+                        
                     </div>
-
+                    <div className="menu login">
+                        <Avatar name={this.props.username} color="#1e77ba" round={true} size="60"/>
+                    </div>
                 </div>
             </div>
         </div>
